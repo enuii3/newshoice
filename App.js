@@ -1,15 +1,22 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, View, FlatList, SafeAreaView } from 'react-native';
+import React, { useState, useEffect } from 'react'
+import { StyleSheet, View, FlatList, SafeAreaView } from 'react-native'
 
 import ListItem from './components/ListItem'
-import articles from './dummies/articles'
+import dummyArticles from './dummies/articles'
 
 export default function App() {
+  const [articles, setArticles] = useState([])
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setArticles(dummyArticles)
+    }, 2000)
+    return () => clearTimeout(timer)
+  }, [])
+
   return (
     <SafeAreaView style={styles.container}>
       <FlatList
-        data={articles}
+        data={dummyArticles}
         renderItem={({ item }) => (
           <ListItem
             imageUrl={item.urlToImage}
@@ -20,7 +27,7 @@ export default function App() {
         keyExtractor={(article, index) => index.toString()}
       />
     </SafeAreaView>
-  );
+  )
 }
 
 const styles = StyleSheet.create({
@@ -28,5 +35,5 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#fff',
   },
-});
+})
 
