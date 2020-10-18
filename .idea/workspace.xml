@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a94592a-cf34-4865-9bd2-c36fe316bf3b" name="Default Changelist" comment="" />
+    <list default="true" id="2a94592a-cf34-4865-9bd2-c36fe316bf3b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,9 +40,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="240" y="41" width="1200" height="637" key="AVDManager" timestamp="1602925954315">
+    <state x="240" y="23" width="1200" height="637" key="AVDManager" timestamp="1603001116375">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="240" y="41" width="1200" height="637" key="AVDManager/0.23.1440.877@0.23.1440.877" timestamp="1602925954315" />
+    <state x="-936" y="23" width="1200" height="637" key="AVDManager/-1920.23.1920.1057/0.23.1440.877@-1920.23.1920.1057" timestamp="1602999669472" />
+    <state x="240" y="23" width="1200" height="637" key="AVDManager/0.23.1440.877@0.23.1440.877" timestamp="1603001116375" />
   </component>
 </project>
