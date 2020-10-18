@@ -6,10 +6,12 @@ function ListItem({title, subTitle, imageUrl}){
   return(
     <View style={styles.itemContainer}>
       <View style={styles.leftContainer}>
-        <Image
-          style={{ width: 100, height: 100 }}
-          source={{ uri: imageUrl } }
-        />
+        {!!imageUrl && (
+          <Image
+            style={{ width: 100, height: 100 }}
+            source={{ uri: imageUrl } }
+          />
+        )}
       </View>
       <View style={styles.rightContainer}>
         <Text style={styles.text} numberOfLines = {3}>{title}</Text>
